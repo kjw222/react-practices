@@ -28,3 +28,23 @@ ex04: 애플리케이션 번들링(bundling)
     4) 난독화/압축 ( 개행이나 탭을 모두 없앤다?)(uglyfy) 작업
     5) 번들링
 5. 자바 스크립트 뿐만 아니라 다양한 에셋(assets- css images font)도 모듈로 취급을 한다. 
+6. 설치
+    npm i -D webpack webpack-cli
+    npm .\node_modules\.bin\webpack --version
+    npm webpack --version
+
+      npx webpack ./src/index.js
+
+      npm run build
+
+=========
+ npm i -D webpack webpack-cli  
+웹팩은 웹팩 코어가 있고, 
+
+웹팩을 실행시키면 dist 폴더를 자동으로 만들어준다. 
+만들어진 dist에 있는 main.js를 public으로 옮겨준다.
+
+웹팩의 핵심은 로더?
+jsx
+
+컴파일할 로더가 필요.
