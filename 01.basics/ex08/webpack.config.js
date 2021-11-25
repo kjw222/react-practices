@@ -1,8 +1,9 @@
 const path  = require('path');
 
-module.exports = {
+module.exports = function(env) {
+    return{
     mode: 'development',
-    entry: path.resolve('src/${env.src}/index.js'),      //여기가 엔트리. 여기서부터 디펜던시 분석을 시작함.
+    entry: path.resolve(`src/${env.src}/index.js`),      //여기가 엔트리. 여기서부터 디펜던시 분석을 시작함.
     output: {
         path: path.resolve('public'),
         filename: 'bundle.js',
@@ -29,4 +30,5 @@ module.exports = {
         compress: true,
         historyApiFallback: true         //가상 URL? 히스토리에 저장..? 라우팅하고 리프레시할 때 나는 404에러를 멈추고 메인으로 돌리는..
     }
+}
 }
