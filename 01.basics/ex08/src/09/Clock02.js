@@ -24,6 +24,7 @@ export default function(){
             {' : '} 
 
             {/**comment04: 이런 방식으로 표현식이 실행되는 블록 안에서 주석을 달아야 한다: 추천 */ }
+            
             {('0'+minites).slice(-2)}
             {' : '} 
             {('0'+seconds).slice(-2)} 
